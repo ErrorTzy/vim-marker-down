@@ -182,7 +182,7 @@ HtmlHiLink mkdLinkTitle        htmlString
 HtmlHiLink mkdDelimiter        Delimiter
 
 syn region mkdMarker matchgroup=mkdMarkerMatch start=/==/ end=/==/ keepend contains=@Spell concealends
-highlight mkdMarker guibg=#f9e2af
+highlight mkdMarker guibg=#f9e2af guifg=#45475a
 
 let b:current_syntax = 'mkd'
 
