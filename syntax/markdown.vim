@@ -181,6 +181,9 @@ HtmlHiLink mkdLinkDefTarget    mkdURL
 HtmlHiLink mkdLinkTitle        htmlString
 HtmlHiLink mkdDelimiter        Delimiter
 
+syn region mkdMarker start=/==/ end=/==/ keepend contains=@Spell concealends
+highlight mkdMarker guibg=#f9e2af
+
 let b:current_syntax = 'mkd'
 
 delcommand HtmlHiLink
