@@ -14,19 +14,19 @@ syn region markdownBoldItalicInquote matchgroup=markdownBoldItalicDelimiterInquo
 syn region markdownBoldItalicInquote matchgroup=markdownBoldItalicDelimiterInquote start="\w\@<!___\S\@=" end="\S\@<=___\w\@!\|^$" skip="\\_" contained containedin=mkdQuote concealends
 
 
-highlight markdownStrikeInquote gui=strikethrough guifg=#cba6f7
-highlight markdownStrikeDelimiterInquote gui=strikethrough guifg=#cba6f7
+highlight markdownStrikeInquote cterm=strikethrough gui=strikethrough guifg=#cba6f7
+highlight markdownStrikeDelimiterInquote cterm=strikethrough gui=strikethrough guifg=#cba6f7
 
 highlight markdownItalicInquote gui=underline,italic guifg=#dfc7f8
 highlight markdownItalicDelimiterInquote gui=underline,italic guifg=#dfc7f8
 
-highlight markdownBoldDelimiterInquote gui=bold guifg=#eba0ac
-highlight markdownBoldInquote gui=bold guifg=#eba0ac
+highlight markdownBoldDelimiterInquote cterm=bold ctermfg=Red gui=bold guifg=#eba0ac
+highlight markdownBoldInquote cterm=bold ctermfg=Red gui=bold guifg=#eba0ac
 
-highlight markdownBoldItalicInquote gui=bold,italic guifg=#eba0ac
-highlight markdownBoldItalicDelimiterInquote gui=bold,italic guifg=#eba0ac
+highlight markdownBoldItalicInquote cterm=bold,italic ctermfg=DarkRed gui=bold,italic guifg=#eba0ac
+highlight markdownBoldItalicDelimiterInquote cterm=bold,italic ctermfg=DarkRed gui=bold,italic guifg=#eba0ac
 
-highlight mkdMarker guibg=#f9e2af guifg=#45475a
-highlight htmlBold gui=bold guifg=#89b4fa
-highlight htmlItalic gui=underline,italic
-highlight mkdQuote guifg=#cba6f7
+highlight mkdMarker ctermbg=Yellow ctermfg=Black guibg=#f9e2af guifg=#45475h
+highlight htmlBold ctermfg=Red gui=bold guifg=#89b4fa
+highlight htmlItalic ctermfg=LightRed gui=underline,italic
+highlight mkdQuote ctermfg=DarkBlue guifg=#cba6f7
